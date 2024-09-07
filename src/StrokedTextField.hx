@@ -159,7 +159,7 @@ class StrokedTextField extends Shape
 		var b:Int, index:Int;
 		for (a in 0...shapeData.length)
 		{
-			if (Std.is(shapeData[a], GraphicsPath))
+			if (shapeData[a] is GraphicsPath)
 			{
 				graphicsPath = cast(shapeData[a], GraphicsPath);
 				b = 0;
